@@ -9,7 +9,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 230188
       MYSQL_DATABASE: crm_assinador
-
       MYSQL_USER: dev_001
       MYSQL_PASSWORD: 230188
     ports:
