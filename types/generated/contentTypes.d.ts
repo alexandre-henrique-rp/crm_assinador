@@ -895,7 +895,7 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::sub-cliente.sub-cliente'
     >;
-    uuid: Attribute.UID & Attribute.CustomField<'plugin::field-uuid.uuid'>;
+    uuid: Attribute.String & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

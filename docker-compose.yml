@@ -1,4 +1,6 @@
+
 version: '3.8'
+
 
 services:
   db:
@@ -7,6 +9,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 230188
       MYSQL_DATABASE: crm_assinador
+
       MYSQL_USER: dev_001
       MYSQL_PASSWORD: 230188
     ports:
@@ -15,4 +18,5 @@ services:
       - db_data:/var/lib/mysql
 
 volumes:
+
   db_data:

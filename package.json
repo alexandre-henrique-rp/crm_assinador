@@ -2,7 +2,7 @@
   "name": "crm-assinador",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Crm para aplicação de assinatura de pdf",
   "scripts": {
     "dev": "strapi develop",
     "start": "strapi start",
@@ -17,7 +17,6 @@
     "@strapi/plugin-users-permissions": "4.24.2",
     "@strapi/provider-email-sendgrid": "^4.24.2",
     "@strapi/strapi": "4.24.2",
-    "free-mail-sender": "^1.0.1",
     "mysql": "2.18.1",
     "mysql2": "^3.9.7",
     "react": "^18.0.0",
@@ -28,7 +27,7 @@
     "styled-components": "5.3.3"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Rede Brasil Rp"
   },
   "strapi": {
     "uuid": "7c46768e-aa29-4832-8359-ad8abcd45a17"
