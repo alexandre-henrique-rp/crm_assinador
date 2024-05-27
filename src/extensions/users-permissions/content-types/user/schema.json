@@ -106,8 +106,8 @@
       "mappedBy": "user"
     },
     "uuid": {
-      "type": "customField",
-      "customField": "plugin::field-uuid.uuid"
+      "type": "string",
+      "unique": true
     }
   }
 }
