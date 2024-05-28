@@ -108,6 +108,13 @@
     "uuid": {
       "type": "string",
       "unique": true
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -896,6 +896,7 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'api::sub-cliente.sub-cliente'
     >;
     uuid: Attribute.String & Attribute.Unique;
+    avatar: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
