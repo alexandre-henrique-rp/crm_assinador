@@ -44,9 +44,8 @@
       "default": false
     },
     "uuid": {
-      "pluginOptions": {},
-      "type": "customField",
-      "customField": "plugin::field-uuid.uuid"
+      "type": "string",
+      "unique": true
     }
   }
 }

@@ -65,8 +65,8 @@
           "localized": true
         }
       },
-      "type": "customField",
-      "customField": "plugin::field-uuid.uuid"
+      "type": "string",
+      "unique": true
     }
   }
 }

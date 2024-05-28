@@ -383,7 +383,7 @@ export interface ApiDocDoc extends Schema.CollectionType {
       'plugin::users-permissions.user'
     >;
     status: Attribute.Boolean & Attribute.DefaultTo<false>;
-    uuid: Attribute.UID & Attribute.CustomField<'plugin::field-uuid.uuid'>;
+    uuid: Attribute.String & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -440,8 +440,8 @@ export interface ApiSubClienteSubCliente extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.user'
     >;
-    uuid: Attribute.UID &
-      Attribute.CustomField<'plugin::field-uuid.uuid'> &
+    uuid: Attribute.String &
+      Attribute.Unique &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
