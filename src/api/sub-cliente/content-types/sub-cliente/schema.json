@@ -67,6 +67,12 @@
       },
       "type": "string",
       "unique": true
+    },
+    "doc": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doc.doc",
+      "inversedBy": "sub_clientes"
     }
   }
 }

@@ -384,6 +384,11 @@ export interface ApiDocDoc extends Schema.CollectionType {
     >;
     status: Attribute.Boolean & Attribute.DefaultTo<false>;
     uuid: Attribute.String & Attribute.Unique;
+    sub_clientes: Attribute.Relation<
+      'api::doc.doc',
+      'oneToMany',
+      'api::sub-cliente.sub-cliente'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -447,6 +452,11 @@ export interface ApiSubClienteSubCliente extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    doc: Attribute.Relation<
+      'api::sub-cliente.sub-cliente',
+      'manyToOne',
+      'api::doc.doc'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

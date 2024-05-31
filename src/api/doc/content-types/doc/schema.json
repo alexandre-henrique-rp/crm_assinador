@@ -46,6 +46,12 @@
     "uuid": {
       "type": "string",
       "unique": true
+    },
+    "sub_clientes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-cliente.sub-cliente",
+      "mappedBy": "doc"
     }
   }
 }
