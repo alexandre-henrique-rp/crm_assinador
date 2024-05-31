@@ -881,6 +881,8 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     >;
     nome: Attribute.String;
     whatsapp: Attribute.String;
+    avatar: Attribute.Media;
+    uuid: Attribute.String & Attribute.Unique;
     Rg_number: Attribute.String;
     cnh_number: Attribute.String;
     foto_rg: Attribute.Media;
@@ -895,8 +897,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::sub-cliente.sub-cliente'
     >;
-    uuid: Attribute.String & Attribute.Unique;
-    avatar: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

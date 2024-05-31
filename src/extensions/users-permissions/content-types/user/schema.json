@@ -66,10 +66,24 @@
       "configurable": false
     },
     "nome": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
     },
     "whatsapp": {
-      "type": "string"
+      "type": "string",
+      "configurable": false
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "uuid": {
+      "type": "string",
+      "unique": true
     },
     "Rg_number": {
       "type": "string"
@@ -104,17 +118,6 @@
       "relation": "oneToMany",
       "target": "api::sub-cliente.sub-cliente",
       "mappedBy": "user"
-    },
-    "uuid": {
-      "type": "string",
-      "unique": true
-    },
-    "avatar": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }
