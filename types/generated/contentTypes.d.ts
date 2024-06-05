@@ -383,7 +383,12 @@ export interface ApiDocDoc extends Schema.CollectionType {
       'plugin::users-permissions.user'
     >;
     status: Attribute.Boolean & Attribute.DefaultTo<false>;
-    uuid: Attribute.UID & Attribute.CustomField<'plugin::field-uuid.uuid'>;
+    uuid: Attribute.String & Attribute.Unique;
+    sub_clientes: Attribute.Relation<
+      'api::doc.doc',
+      'oneToMany',
+      'api::sub-cliente.sub-cliente'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -440,13 +445,18 @@ export interface ApiSubClienteSubCliente extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.user'
     >;
-    uuid: Attribute.UID &
-      Attribute.CustomField<'plugin::field-uuid.uuid'> &
+    uuid: Attribute.String &
+      Attribute.Unique &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
+    doc: Attribute.Relation<
+      'api::sub-cliente.sub-cliente',
+      'manyToOne',
+      'api::doc.doc'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -881,6 +891,8 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     >;
     nome: Attribute.String;
     whatsapp: Attribute.String;
+    avatar: Attribute.Media;
+    uuid: Attribute.String & Attribute.Unique;
     Rg_number: Attribute.String;
     cnh_number: Attribute.String;
     foto_rg: Attribute.Media;
@@ -895,7 +907,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::sub-cliente.sub-cliente'
     >;
-    uuid: Attribute.String & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
