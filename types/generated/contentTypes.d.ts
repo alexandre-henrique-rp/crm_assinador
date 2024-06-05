@@ -907,6 +907,16 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::sub-cliente.sub-cliente'
     >;
+    cep: Attribute.String;
+    cidade: Attribute.String;
+    endereco: Attribute.String;
+    estado: Attribute.String;
+    bairro: Attribute.String;
+    numero: Attribute.String;
+    complemento: Attribute.String;
+    genero: Attribute.String;
+    escolaridade: Attribute.String;
+    data_de_nascimento: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
