@@ -118,6 +118,36 @@
       "relation": "oneToMany",
       "target": "api::sub-cliente.sub-cliente",
       "mappedBy": "user"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "endereco": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "genero": {
+      "type": "string"
+    },
+    "escolaridade": {
+      "type": "string"
+    },
+    "data_de_nascimento": {
+      "type": "date"
     }
   }
 }

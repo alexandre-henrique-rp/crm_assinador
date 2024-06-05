@@ -14,9 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-
-    "x-generation-date": "2024-06-04T17:54:15.654Z"
-
+    "x-generation-date": "2024-06-05T19:36:30.141Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1983,6 +1981,37 @@
                             }
                           }
                         }
+                      },
+                      "cep": {
+                        "type": "string"
+                      },
+                      "cidade": {
+                        "type": "string"
+                      },
+                      "endereco": {
+                        "type": "string"
+                      },
+                      "estado": {
+                        "type": "string"
+                      },
+                      "bairro": {
+                        "type": "string"
+                      },
+                      "numero": {
+                        "type": "string"
+                      },
+                      "complemento": {
+                        "type": "string"
+                      },
+                      "genero": {
+                        "type": "string"
+                      },
+                      "escolaridade": {
+                        "type": "string"
+                      },
+                      "data_de_nascimento": {
+                        "type": "string",
+                        "format": "date"
                       },
                       "createdAt": {
                         "type": "string",
@@ -4153,6 +4182,37 @@
                             }
                           }
                         }
+                      },
+                      "cep": {
+                        "type": "string"
+                      },
+                      "cidade": {
+                        "type": "string"
+                      },
+                      "endereco": {
+                        "type": "string"
+                      },
+                      "estado": {
+                        "type": "string"
+                      },
+                      "bairro": {
+                        "type": "string"
+                      },
+                      "numero": {
+                        "type": "string"
+                      },
+                      "complemento": {
+                        "type": "string"
+                      },
+                      "genero": {
+                        "type": "string"
+                      },
+                      "escolaridade": {
+                        "type": "string"
+                      },
+                      "data_de_nascimento": {
+                        "type": "string",
+                        "format": "date"
                       },
                       "createdAt": {
                         "type": "string",
