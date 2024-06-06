@@ -917,6 +917,7 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     genero: Attribute.String;
     escolaridade: Attribute.String;
     data_de_nascimento: Attribute.Date;
+    avatar_url: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

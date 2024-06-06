@@ -148,6 +148,9 @@
     },
     "data_de_nascimento": {
       "type": "date"
+    },
+    "avatar_url": {
+      "type": "string"
     }
   }
 }
