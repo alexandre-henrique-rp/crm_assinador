@@ -52,6 +52,9 @@
       "relation": "oneToMany",
       "target": "api::sub-cliente.sub-cliente",
       "mappedBy": "doc"
+    },
+    "assinatura": {
+      "type": "json"
     }
   }
 }

@@ -389,6 +389,7 @@ export interface ApiDocDoc extends Schema.CollectionType {
       'oneToMany',
       'api::sub-cliente.sub-cliente'
     >;
+    assinatura: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
